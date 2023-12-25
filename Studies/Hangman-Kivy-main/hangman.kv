@@ -1,0 +1,54 @@
+<MyRoot>:
+    orientation: "vertical"
+
+    Label:
+        text: "Hangman"
+        font_size: 84
+        color: 0, 1, 0, 1
+
+    BoxLayout:
+        size_hint: 1, 0.5
+
+        Label:
+            size_hint: 0.25, 1
+
+        Label:
+            text: "ERRORS: " + root.ERRORS
+            font_name: "fonts/Plaguard.otf"
+            font_size: 32
+            color: 0, 1, 0, 1
+            size_hint: 0.5, 1
+
+        Button:
+            text: "Restart"
+            font_size: 24
+            font_name: "fonts/Plaguard.otf"
+            size_hint: 0.25, 1
+            on_press: root.start_game()
+
+    Image:
+        source: root.HANGMAN_IMG
+        size_hint: 1, 2
+
+    Label:
+        text: root.GAME_MSG
+        size_hint: 1, 0.75
+        font_name: "fonts/Plaguard.otf"
+        font_size: 32
+        color: 0, 1, 0, 1
+
+    Label:
+        text: root.WORD_DISPLAY
+        size_hint: 1, 0.75
+        font_name: "fonts/Plaguard.otf"
+        font_size: 32
+        color: 0, 1, 0, 1
+
+    Label:
+        text: "Available Letters"
+        size_hint: 1, 0.75
+        font_name: "fonts/Plaguard.otf"
+        font_size: 32
+        color: 0, 1, 0, 1
+
+    ButtonsLayout:
