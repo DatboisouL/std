@@ -56,6 +56,7 @@ class MyRoot(BoxLayout):
     HANGMAN_IMG = StringProperty()
     GAME_MSG = StringProperty()
     WORD_DISPLAY = StringProperty()
+    ###ss
 
     def __init__(self, **kwargs):
         super(MyRoot, self).__init__(**kwargs)
